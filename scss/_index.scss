@@ -1,3 +1,5 @@
+//HEADER//
+
 header {
 	margin: 0 auto;
     height: 90vh;
@@ -31,8 +33,28 @@ header {
             }
         }
 
+        &__paragraph p {
+            margin: 3rem 0;
+            padding-bottom: 1.6rem;
+        }
+
         &__buttons {
             margin: 3rem 0;
         }
+    }
+}
+
+//PORTFOLIO SECTION//@include
+
+.fluid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+    grid-gap: 4rem;
+    padding: 3rem 1rem;
+    @include sm {
+        padding: 5rem 10rem;
+    }
+    @include md {
+        grid-gap: 10rem;
     }
 }
