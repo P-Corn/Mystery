@@ -1,8 +1,7 @@
 header {
   margin: 0 auto;
   height: 90vh;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#56ccf2), color-stop(#25bbf5), color-stop(#00a9f6), color-stop(#0096f4), to(#2f80ed));
-  background-image: linear-gradient(to top, #56ccf2, #25bbf5, #00a9f6, #0096f4, #2f80ed);
+  background-color: #2f81ed;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -493,10 +492,14 @@ html {
 .btn-outline, .btn-outline--light {
   font-weight: 600;
   padding: 1rem 1.4rem;
+  margin: 1.6rem 2rem;
+  text-decoration: none;
 }
 
 .btn-outline--light {
   color: #f5f5f5;
+  border: solid #ed9b2f 2px;
+  font-size: 1.5rem;
 }
 
 .service-card {
