@@ -1,0 +1,32 @@
+.services-page {
+    .container {
+        @include md {
+            display: block;
+        }
+
+        .three-layer-card {
+            max-width: 35rem;
+            margin: 2rem;
+            @include md {
+                max-width: 80rem;
+                margin: 0 auto;
+                margin-bottom: 4rem;
+                display: flex;
+                text-align: left;
+            }
+
+            &__icon {
+                @include md {
+                    margin: 4.5rem 0;
+                margin-right: 4rem;
+                }
+            }
+
+            p {
+                @include md {
+                    max-width: 68rem;
+                }
+            }
+        }
+    }
+}

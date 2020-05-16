@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
-    <title>Portfolio</title>
+    <title>AP Design</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -17,14 +17,17 @@
                 <div class="line"></div>
                 <div class="line"></div>
             </div>
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="views/about.html">About</a></li>
-                <li><a href="views/portfolio.html">Portfolio</a></li>
-                <li><a href="views/services.html">Services</a></li>
-                <li><a href="views/contact.html">Contact</a></li>
-                <li><a href="views/faq.html">FAQ</a></li>
-            </ul>
+                <div class="nav-logo">
+                    <img src="/images/AP.png" alt="">
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="views/about.html">About</a></li>
+                    <li><a href="views/portfolio.html">Portfolio</a></li>
+                    <li><a href="views/services.html">Services</a></li>
+                    <li><a href="views/contact.html">Contact</a></li>
+                    <li><a href="views/faq.html">FAQ</a></li>
+                </ul>
         </nav>
     
         <header>
@@ -49,13 +52,17 @@
     </div>
 
     <section class="index-portfolio">
+        <div class="index-portfolio__title">
+            <h2 class="section-title">Our Work</h2>
+        </div>
         <div class="container index-portfolio-container">
             <div class="portfolio-card">
                 <div class="portfolio-card__image">
                     <a href="#"><img src="../images/cooking-page.png" alt=""></a>
                 </div>
                 <div class="portfolio-card__content">
-                    <h3 class="portfolio-card__content__title">Recipe Page</h3>
+                    <h3 class="portfolio-card__content__title">Recipe Guide</h3>
+                    <p class="portfolio-card__content__text">A website built to display an omelette recipe.</p>
                 </div>
             </div>
 
@@ -65,15 +72,101 @@
                 </div>
                 <div class="portfolio-card__content">
                     <h3 class="portfolio-card__content__title">Museum Redesign</h3>
+                    <p class="portfolio-card__content__text">A modern redesign of a museum website.</p>
                 </div>
             </div>
 
             <div class="portfolio-card">
                 <div class="portfolio-card__image">
-                    <a href="#"><img src="../images/cooking-page.png" alt=""></a>
+                    <a href="#"><img src="../images/about-me.png" alt=""></a>
                 </div>
                 <div class="portfolio-card__content">
-                    <h3 class="portfolio-card__content__title">Recipe Page</h3>
+                    <h3 class="portfolio-card__content__title">About Me</h3>
+                    <p class="portfolio-card__content__text">This is an about me website, giving a brief history about myself.</p>
+                </div>
+            </div>
+        </div>
+        <div class="section-button">
+            <a class="btn-outline--orange button--ujarak" href="views/portfolio.html">View all websites</a>
+        </div>
+    </section>
+
+    <section class="index-services">
+        <div class="index-services__title">
+            <h2 class="section-title">how we can help</h2>
+        </div>
+        <div class="container index-services__container">
+            <div class="three-layer-card">
+                <div class="three-layer-card__icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M370.223 0H141.777c-17.015 0-30.857 13.841-30.857 30.848V51.2h290.15V30.848C401.071 13.841 387.23 0 370.223 0zm-71.552 42.667h-85.333a8.536 8.536 0 01-8.533-8.533 8.536 8.536 0 018.533-8.533h85.333a8.536 8.536 0 018.533 8.533 8.536 8.536 0 01-8.533 8.533zm59.733 0h-8.533a8.536 8.536 0 01-8.533-8.533 8.536 8.536 0 018.533-8.533h8.533a8.536 8.536 0 018.533 8.533c.001 4.71-3.822 8.533-8.533 8.533zM266.594 452.267h-21.188a6.484 6.484 0 00-6.477 6.477v4.122c0 3.567 2.901 6.468 6.477 6.468h21.188a6.475 6.475 0 006.468-6.468v-4.122c.009-3.576-2.901-6.477-6.468-6.477zM110.938 68.267h290.133V409.6H110.938z"/><path d="M110.938 426.667v54.485c0 17.007 13.841 30.848 30.848 30.848h228.446c17.007 0 30.848-13.841 30.848-30.848v-54.485H110.938zm179.2 36.198c0 12.979-10.556 23.535-23.535 23.535h-21.188c-12.979 0-23.543-10.556-23.543-23.535v-4.122c0-12.979 10.564-23.543 23.543-23.543h21.188c12.979 0 23.535 10.564 23.535 23.543v4.122z"/></svg>
+                </div>
+                <div class="three-layer-card__title">
+                    <h3>Responsive</h3>
+                </div>
+                <div class="three-layer-card__content">
+                    <p>With more than half of individuals using a phone to browse the web, we build our websites with mobile responsiveness in mind.</p>
+                </div>
+            </div>
+
+            <div class="three-layer-card">
+                <div class="three-layer-card__icon">
+                    <svg  viewBox="0 0 511 512" xmlns="http://www.w3.org/2000/svg"><path d="M133.195 153.914l70.254 70.254 21.207-21.211-70.254-70.254V76.352L48.516.008.5 48.023l76.344 105.891zm0 0"/><path d="M358.848 26.332c-45.782 45.809-18.223 99.813-17.973 102.813l-211.219 211.27c-3-.231-56.879-27.99-102.812 17.944C-.078 385.297-7.136 426.457 9.25 460.805l60.027-60.012 42.422 42.422-60.011 60.012c33.59 16.062 74.867 9.996 102.43-17.594 45.804-45.778 18.222-99.797 17.972-102.797l211.219-211.258c3 .297 57.066 27.813 102.812-17.973 26.938-26.921 33.996-68.082 17.594-102.433l-60.012 60.012-42.422-42.418 60.012-60.028C427.914-7.145 386.653-1.43 358.848 26.332zm0 0"/><path d="M266.984 330.09l63.594-63.594 21.3 21.3-63.597 63.595zm0 0M448.879 511.988L309.586 372.695l63.598-63.593L512.473 448.39zm0 0"/></svg>
+                </div>
+                <div class="three-layer-card__title">
+                    <h3>Maintenance</h3>
+                </div>
+                <div class="three-layer-card__content">
+                    <p>We maintain your website for you so you can worry less about upkeep and focus more on your business.</p>
+                </div>
+            </div>
+
+            <div class="three-layer-card">
+                <div class="three-layer-card__icon">
+                    <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M0 0v112h512V0zm91 71H61V41h30zm60 0h-30V41h30zm60 0h-30V41h30zm240 0H301V41h150zM0 202v110h512V202zm91 70H61v-30h30zm60 0h-30v-30h30zm60 0h-30v-30h30zm240 0H301v-30h150zM0 402v110h512V402zm91 70H61v-30h30zm60 0h-30v-30h30zm60 0h-30v-30h30zm240 0H301v-30h150zM31 142h450v30H31zM31 342h450v30H31z"/></svg>
+                </div>
+                <div class="three-layer-card__title">
+                    <h3>Hosting</h3>
+                </div>
+                <div class="three-layer-card__content">
+                    <p>We can take care of hosting your website on the web. Our web hosting services are fast and awesome.</p>
+                </div>
+            </div>
+        </div>
+        <div class="section-button">
+            <a class="btn-outline--orange button--ujarak" href="views/services.html">See more details</a>
+        </div>
+    </section>
+
+    <section class="index-contact">
+        <div class="index-contact__title">
+            <h2 class="section-title">Contact Us</h2>
+        </div>
+        <div class="container index-form-container">
+            <div>
+                <div class="form-container">
+                    <form action="/send" method="POST" class="contact-form">
+                        <fieldset>
+                            <div class="form-row">
+                                <label for="firstname">First name</label>
+                                <input type="text" name="firstname" placeholder="Jane">
+                            </div>
+                            <div class="form-row">
+                                <label for="lastname">Last name</label>
+                                <input type="text" name="lastname" placeholder="Doe">
+                            </div>
+                            <div class="form-row">
+                                <label for="email">Email</label>
+                                <input type="email" name="email" placeholder="jane.doe@example.com" id="email">
+                            </div>
+                            <div class="form-row">
+                                <label for="message">Anything else?</label>
+                                <textarea type="text" name="message" placeholder="Tell us about your website needs and we'll contact you shortly"></textarea>
+                            </div>
+                            <div class="submit-row">
+                                <button type="submit" class="btn submit-btn">Submit</button>
+                            </div>
+                        </fieldset>
+                    </form>
                 </div>
             </div>
         </div>
@@ -101,6 +194,7 @@
                     </ul>
                 </div>
             </div>
+            <p class="copyright">© AP Design 2020</p>
         </div>
     </footer>
 

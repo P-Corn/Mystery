@@ -1,3 +1,14 @@
+//COLORS//
+
+:root {
+    --primary-blue: #2f81ed;
+    --secondary-orange: #ed9b2f;
+    --text-color: #f5f5f5;
+    --text-color-dark: #282828;
+    --card-color: #f7f9fa;
+    --text-color-gray: #70757a;
+}
+
 html {
     min-height: 100vh;
 }
@@ -5,4 +16,38 @@ html {
 .container {
     max-width: 120rem;
     margin: 0 auto;
+}
+
+section {
+    padding: 6rem 0;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    word-spacing: .5rem;
+    color: #282828;
+    @include md {
+        font-size: 3.5rem;
+    }
+}
+
+.page-header {
+    padding-top: 10rem;
+    text-align: center;
+    height: 40vh;
+    color: var(--text-color);
+    font-size: 3rem;
+}
+
+.contact-section {
+    .container {
+        max-width: 80rem;
+    }
+}
+
+.section-button {
+    text-align: center;
+    margin-top: 1rem;
 }

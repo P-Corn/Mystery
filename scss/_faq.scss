@@ -29,9 +29,9 @@
             width: .5rem;
         }
 
-        &__question-block {background-color: rgb(102, 102, 255);}
+        &__question-block {background-color: var(--primary-blue);}
 
-        &__answer-block {background-color: red;}
+        &__answer-block {background-color: var(--secondary-orange);}
 
         &__question-content, &__answer-content {
             display: flex;
@@ -42,9 +42,9 @@
                 padding-left: 2rem;
             }
 
-            .faq-card__Q {color: rgb(102, 102, 255);}
+            .faq-card__Q {color: var(--primary-blue);}
 
-            .faq-card__A {color: red;}
+            .faq-card__A {color: var(--secondary-orange);}
 
             h3 {
                 padding: 0 2.5rem 0 2.5rem;

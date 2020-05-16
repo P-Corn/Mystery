@@ -2,13 +2,18 @@
 
 header {
 	margin: 0 auto;
-    height: 90vh;
-    background-color: #2f81ed;
+    height: 60vh;
+    background-color: var(--primary-blue);
     // background-image: linear-gradient(to top, #56ccf2, #25bbf5, #00a9f6, #0096f4, #2f80ed);
 	// This is to compensate for the fixed navbar
 	// padding-top: 10rem;
     display: flex;
     align-items: center;
+    justify-content: center;
+
+    @include sm {
+        height: 90vh;
+    }
 }
 
 .header-container {
@@ -47,17 +52,44 @@ header {
 //PORTFOLIO SECTION//@include
 
 .index-portfolio {
-    background-color: rgb(247, 247, 247);
+    background-color: white;
+    
     .container {
         display: grid;
         justify-content: center;
         grid-template-columns: repeat(auto-fill, minmax(35rem, 1fr));
         grid-gap: 5rem;
         padding: 3rem 1rem;
-        max-width: 150rem;
+        max-width: 160rem;
         @include sm {
             padding: 5rem 10rem;
             grid-template-columns: repeat(auto-fill, minmax(50rem, 1fr));
         }
+    }
+}
+
+//SERVICES//@include
+
+.index-services {
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding: 3rem 0rem;
+        max-width: 120rem;
+
+        @include sm {
+            padding: 5rem 0rem;
+        }
+    }
+}
+
+//CONTACT//@include
+
+.index-contact {
+    .container {
+        max-width: 100rem;
+        padding: 5rem 0;
     }
 }
