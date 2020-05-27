@@ -5,3 +5,4 @@ const links = document.querySelectorAll('.nav-links li')
 hamburger.addEventListener('click', () => {
     navLinks.classList.toggle('open')
 })
+// COMENTEMTLJHTHEJT DSJFL DJLKFJDSKLFJLKDJFLKSDJ FLHSDFGKjvldsjhfgkaljosdfjhnflwe
